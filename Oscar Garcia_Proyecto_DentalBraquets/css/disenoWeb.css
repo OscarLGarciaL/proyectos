@@ -1,0 +1,816 @@
+html {
+    background-color: #EFEFEF;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam', sans-serif;
+    list-style: none;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0062CB;
+}
+
+p {
+    font-size: 18px;
+    color: #0f0f0f;
+    font-weight: normal;
+}
+
+button {
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 32px 8px 32px;
+    border-radius: 50px;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    position: relative;
+    min-width: 375px;
+}
+
+.__titulo {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.__subtitulo {
+    margin-bottom: 40px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.__texto {
+    margin-bottom: 32px;
+}
+
+.__botonSecundario {
+    background-color: #EFEFEF;
+    color: #0062CB;
+    border: 2px solid #0062CB;
+}
+
+.__botonSecundario:hover {
+    background-color: #0062CB;
+    color: #EFEFEF;
+    border: 2px solid #0062CB;
+    cursor: pointer;
+}
+
+
+/* ////////////////////////////////////////// HEADER /// */
+.headerContenedor {
+    position: fixed;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.219);
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 1;
+    height: 75px; /* ALTURA DE .headerContenedor__logo */
+}
+
+.headerContenedor__menuPequeno {
+    background-color: #0062CB;
+    padding-top: 16px;
+    padding-bottom: 84px; /* la altura de .headerContenedor__logo */
+}
+
+.headerContenedor__menuPequeno__enlace:link, .headerContenedor__menuPequeno__enlace:visited {
+    color: #EFEFEF;
+}
+
+.headerContenedor__menuPequeno__enlace:hover, .headerContenedor__menuPequeno__enlace:active {
+    color: #EFEFEF;
+    text-decoration: underline;
+    text-decoration-color: #EFEFEF;
+}
+
+.menuPequeno__li {
+    font-size: 25px;
+    padding: 8px 10%;
+}
+
+
+/* ////////////// HEADER LOGO /// */ 
+.headerContenedor__logo {
+    background-color: #0062CB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.headerContenedor__logo__imagotipo {
+    display: none;
+}
+
+.headerContenedor__logo__logotipo {
+    display: initial;
+}
+
+.header__dentalBraquetsLogo__svg {
+    height: 30px;
+    width: auto;
+}
+
+.header__dentalBraquetsLogo__iconoMenu {
+    width: 35px;
+    height: 35px;
+    background-image: url(/images/icons/menu-white-48dp.svg);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.headerContenedor__logo__areaPersonal {
+    display: none;
+}
+
+.header__dentalBraquetsLogo__areaPersonal {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #0062CB;
+    border-radius: 25px;
+}
+
+.header__dentalBraquetsLogo__areaPersonal:hover {
+    border: 2px solid #EFEFEF;
+}
+
+
+/* ////////////// ESPACIO HEADER //// */
+.espacioHeader {
+    height: 75px;
+    background-color: #0062CB;
+    width: 100%;
+}
+
+
+/* //////////// MENU VERSIÓN GRANDE //// */
+.headerContenedor__menuGrande {
+    background-color: #0062CB;
+    width: 100%;
+    padding: 5px 20% 20px;
+    display: none;
+}
+
+.menuGrande__ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerContenedor__menuGrande__enlace:link, .headerContenedor__menuGrande__enlace:visited {
+    color: #EFEFEF;
+}
+
+.headerContenedor__menuGrande__enlace:hover, .headerContenedor__menuGrande__enlace:active {
+    color: #EFEFEF;
+    text-decoration: underline;
+    text-decoration-color: #EFEFEF;
+}
+
+.menuGrande__li {
+    font-size: 20px;
+}
+
+
+/* ////////////// MEDIA QUERY 768px /// */
+@media only screen and (min-width: 768px) {
+
+    .__titulo {
+        text-align: center;
+    }
+
+    .__subtitulo {
+        text-align: center;
+    }
+
+
+    /* ///////////// HEADER /// */
+    .menuPequeno__li {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .headerContenedor__logo {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .headerContenedor__logo__imagotipo {
+        display: initial;
+    }
+    
+    .headerContenedor__logo__logotipo {
+        display: none;
+    }
+}
+
+
+/* /////////// MEDIA QUERY 1600px /// */
+@media only screen and (min-width: 1600px) {
+
+
+    /* /////// HEADER /// */
+    .headerContenedor {
+        box-shadow: none;
+        height: 114px;
+    }
+
+
+    /* ///////MENU VERSIÓN PEQUEÑA /// */
+    .headerContenedor__menuPequeno {
+        display: none;
+    }
+
+
+    /* ////// MENU LOGO /// */
+    .headerContenedor__logo {
+        height: 114px;
+    }
+
+    .header__dentalBraquetsLogo__enlace {
+        display: block;
+    }
+
+    .header__dentalBraquetsLogo__svg {
+        height: 45px;
+    }
+
+    .headerContenedor__logo__areaPersonal {
+        display: initial;
+    }
+
+    .header__dentalBraquetsLogo__iconoMenu {
+        display: none;
+    }
+
+
+    /* /////// ESPACIO HEADER /// */
+    .espacioHeader {
+        height: calc(calc(114px + 54px) - 1px);  /* la altura de .headerContenedor__logo y .headerContenedor__menuGrande */
+        background-color: #0062CB;
+    }
+
+
+    /* //// MENU VERSIÓN GRANDE /// */
+    .headerContenedor__menuGrande {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.219);
+        position: fixed;
+        top: 113px; /* la altura de .headerContenedor__logo - 1px */
+        z-index: 1;
+        display: block;
+    }
+}
+/* ////////////////////////////////////////// FINAL DE HEADER // */
+
+
+/* ////////////////////////////////////////// DISEÑO WEB // */
+.disenoWeb {
+    padding: 94px 0 62px;
+}
+
+.disenoWeb__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .disenoWeb__textos {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .disenoWeb__textos {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+/* ////////////////////////////////// FINAL DE DISEÑO WEB /// */
+
+
+/* /////////////////// BENEFICIOS ///////////////////// */
+
+.beneficios {
+    padding-bottom: 94px;
+}
+
+.beneficios__textos {
+ padding: 0 10% 0;
+}
+
+.beneficios__contenedor {
+    padding: 0 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-wrap: wrap;
+    min-height: 436px;
+}
+
+.beneficios__contenedor__beneficio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 149.5px;
+    margin-bottom: 24px;
+}
+
+.beneficios__contenedor__beneficio:nth-of-type(even) {
+    align-self: flex-end;
+}
+
+.beneficio__imagen {
+    width: 132px;
+    height: 132px;
+    margin-bottom: 8px;
+}
+
+.beneficio__texto {
+    text-align: center;
+}
+
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .beneficios__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .beneficios__contenedor { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .beneficios__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .beneficios__contenedor { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+/* /////////////////////////// FINAL DE BENEFICIOS // */
+
+
+/* ////////////////////////////////////////// CTA /// */
+.CTA {
+    background: rgb(0,98,203);
+    background: linear-gradient(145deg, rgba(0,98,203,1) 0%, rgba(34,75,133,1) 100%);
+    padding: 48px 10%;
+    color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CTA:last-of-type {
+    margin-bottom: 94px;
+}
+
+.CTA__titulo {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.CTA__boton {
+    color: #EFEFEF;
+    border: 2px solid #EFEFEF;
+    background-color: #0062cb00;
+}
+
+.CTA__boton:hover, .CTA__boton:active {
+    border: 2px solid #EFEFEF;
+    background-color: #EFEFEF;
+    color: #0062CB;
+}
+
+
+/* //////// MEDIA QUERY 768px ////////// */
+@media only screen and (min-width: 768px) {
+
+    .CTA {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+
+/* /////// MEDIA QUERY 1600px ////////// */
+@media only screen and (min-width: 1600px) {
+
+    
+}
+/* ////////////////////////////////////////// FINAL DE CTA /// */
+
+
+/* //////////////////////////////// PROCESO //////////// */
+.proceso {
+    padding: 94px 0;
+}
+
+.proceso__textos {
+    padding: 0 10%;
+}
+
+.proceso__pasos {
+    padding: 0 10%;
+}
+
+.proceso__paso__numero {
+    font-family: inherit;
+    font-size: 70px;
+    color: #0062CB;
+    font-weight: bolder; 
+    display: inline;
+    margin-right: 16px;
+}
+
+.proceso__paso__nombre {
+    display: inline;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #0f0f0f;
+}
+
+.proceso__paso__descripcion {
+    margin-bottom: 32px;
+}
+
+.proceso__paso__flecha {
+    width: 56px;
+    height: 56px;
+}
+
+.proceso__paso:last-of-type .proceso__paso__descripcion {
+    margin-bottom: 0;
+}
+
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .proceso__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .proceso__pasos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .proceso__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .proceso__pasos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+/* /////////////////////////// FINAL DE BENEFICIOS // */
+
+
+/* ////////////////// ESTRUCTURA ///////////////////// */
+
+.estructura {
+    padding: 0 0 94px;
+}
+
+.estructura__textos {
+    padding: 0 10%;
+}
+
+.estructura__apartados {
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.estructura__apartado {
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.estructura__apartado__nombre {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .estructura__textos { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .estructura__apartados { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .estructura__textos { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .estructura__apartados { 
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+/* /////////////////////////// FINAL DE ESTRUCTURA // */
+
+
+/* ////////////////////////////////////////// TESTIMONIOS /// */
+.testimonios {
+    padding: 0 0 96px;
+}
+
+.testimonios__textos {
+    padding: 0 10%;
+}
+
+.testimonios__block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    padding: 0 10%;
+}
+
+.testimonios__testimonio {
+    border: 2px solid #0062CB;
+    padding: 40px 18px;
+    border-radius: 25px;
+    margin: 0 auto 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 300px;
+    flex-grow: 1;
+}
+
+.testimonios__testimonio__perfil {
+    margin: 0 auto 16px;
+}
+
+.testimonios__testimonio__imagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    flex-basis: 30%;
+    background-color: #0062CB;
+}
+
+.--perfil1 {
+    background-image: url(/images/profiles/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.--perfil2 {
+    background-image: url(/images/profiles/jonathan-borba-Yui-VjmS8AA-unsplash.jpg);
+    background-position: center top;
+    background-size: contain;
+}
+
+.--perfil3 {
+    background-image: url(/images/profiles/bofu-shaw-Dqrlp6cMLkE-unsplash.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.testimonios__testimonio__textos {
+    min-width: 260px;
+    flex-basis: 60%;
+    margin: 0 auto;
+}
+
+.testimonio__textos__nombreClinica {
+    color: #0062CB;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.testimonio__textos__cita {
+    font-style: italic;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.testimonio__textos__nombreDoctor {
+    color: #0062CB;
+    font-style: italic;
+    margin-bottom: 32px;
+    text-align: right;
+}
+
+.testimonio__textos__detalles {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+/* ///////// MEDIA QUERY 768px ///////// */
+@media only screen and (min-width: 768px) {
+
+    .testimonios__textos {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .testimonios__block {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .testimonios__testimonio {
+        flex-basis: 46.5%;
+        flex-grow: unset;
+    }
+
+    .testimonios__testimonio:last-of-type {
+        flex-basis: 60%;
+    }
+}
+
+
+/* ///////// MEDIA QUERY 1600px //////// */
+@media only screen and (min-width: 1600px) {
+
+    .testimonios__textos {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .testimonios__block {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .testimonios__testimonio {
+        flex-basis: 30%;
+    }
+
+    .testimonios__testimonio:last-of-type {
+        flex-basis: 30%;
+    }
+}
+/* ////////////////////////////////////////// FINAL DE TESTIMONIOS /// */
+
+
+/* ////////////////////////////////////////// FOOTER /// */
+.contenedorFooter {
+    padding: 48px 10% 48px;
+    background-color: #0062CB;
+}
+
+.footer__redesSociales {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+
+.footer__redesSociales__icon {
+    width: 45px;
+    height: auto;
+    cursor: pointer;
+}
+
+.footer__DentalBraquetsLogo {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #EFEFEF;
+    margin-bottom: 16px;
+}
+
+.footer__direccion1 {
+    color: #EFEFEF;
+}
+
+.footer__direccion2 {
+    color: #EFEFEF;
+    margin-bottom: 16px;
+}
+
+.footer__email {
+    color: #EFEFEF;
+    margin-bottom: 32px;
+}
+
+.footer__privacidad {
+    color: #EFEFEF;
+    text-align: right;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.footer__privacidad:hover {
+    color: #0f0f0f;
+}
+
+.footer__cookies {
+    color: #EFEFEF;
+    text-decoration-line: underline;
+    text-align: right;
+    cursor: pointer;
+}
+
+.footer__cookies:hover {
+    color: #0f0f0f;
+}
+
+
+/* ////////////// MEDIA QUERY 768px /// */
+@media only screen and (min-width: 768px) {
+
+    .contenedorFooter {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+
+/* /////////////// MEDIA QUERY 1600px /// */
+@media only screen and (min-width: 1600px) {
+
+    .footer__redesSociales {
+        padding-left: 30%;
+        padding-right: 30%; 
+    }
+
+    .footer__redesSociales__icon {
+        cursor: pointer;
+    }
+}

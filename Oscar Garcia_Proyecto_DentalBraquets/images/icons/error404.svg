@@ -1,0 +1,18 @@
+<svg id="error404" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <rect id="Rectángulo_156" data-name="Rectángulo 156" width="48" height="48" fill="none"/>
+  <g id="Grupo_20" data-name="Grupo 20" transform="translate(-84.747 -327.542)">
+    <g id="Elipse_5" data-name="Elipse 5" transform="translate(89.747 332.542)" fill="none" stroke="#0062cb" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="19" cy="19" r="19" stroke="none"/>
+      <circle cx="19" cy="19" r="18.5" fill="none"/>
+    </g>
+    <g id="Elipse_6" data-name="Elipse 6" transform="translate(100.266 343.061)" fill="none" stroke="#0062cb" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="8.481" cy="8.481" r="8.481" stroke="none"/>
+      <circle cx="8.481" cy="8.481" r="7.981" fill="none"/>
+    </g>
+    <line id="Línea_57" data-name="Línea 57" x1="7.703" y1="7.703" transform="translate(95.516 338.311)" fill="none" stroke="#0062cb" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Línea_58" data-name="Línea 58" x1="7.703" y1="7.703" transform="translate(114.276 357.071)" fill="none" stroke="#0062cb" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Línea_59" data-name="Línea 59" x1="7.703" y2="7.703" transform="translate(95.516 357.071)" fill="none" stroke="#0062cb" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Línea_60" data-name="Línea 60" x1="7.703" y2="7.703" transform="translate(114.276 338.311)" fill="none" stroke="#0062cb" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+  <path id="Trazado_108" data-name="Trazado 108" d="M200.557,342.34l8.736,8.689-9.372,2.983,9.961,8.732-6.383,4.463,5.768,6.816L206.8,378.05l5.737,7.335" transform="matrix(0.996, 0.087, -0.087, 0.996, -149.665, -356.526)" fill="none" stroke="#0f0f0f" stroke-miterlimit="10" stroke-width="1.5"/>
+</svg>
