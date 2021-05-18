@@ -1,0 +1,8 @@
+<svg id="disenoEspecial" xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <rect id="Rectángulo_157" data-name="Rectángulo 157" width="160" height="160" fill="none"/>
+  <g id="Grupo_38" data-name="Grupo 38" transform="translate(-804.71 -447.9)">
+    <path id="Trazado_106" data-name="Trazado 106" d="M833.468,508.731c-.482-4.933-.758-9.226-.758-12.466,0-18.827,17.4-25.365,25.365-25.365s16.729,4.037,25.257,4.037S900.839,470.9,908.8,470.9s25.375,6.538,25.375,25.365c0,3.24-.276,7.533-.768,12.466" transform="translate(0 0)" fill="#ebebeb" stroke="#161615" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <circle id="Elipse_14" data-name="Elipse 14" cx="8.346" cy="8.346" r="8.346" transform="translate(925.833 567.84)" fill="#ebebeb" stroke="#00509c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Trazado_107" data-name="Trazado 107" d="M866.462,585.246l17.4-38.578,17.474,38.578h11.01l21.842-67.812H923.477l-17.265,53.605-17.872-39.45-8.974.007-17.79,39.436-17.332-53.6H833.528l21.927,67.812Z" transform="translate(-0.013 -0.714)" fill="#ebebeb" stroke="#00509c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.898"/>
+  </g>
+</svg>

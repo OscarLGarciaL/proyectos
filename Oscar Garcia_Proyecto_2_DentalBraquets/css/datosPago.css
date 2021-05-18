@@ -1,0 +1,510 @@
+html {
+    background-color: #EFEFEF;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam', sans-serif;
+    list-style: none;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0062CB;
+}
+
+p {
+    font-size: 18px;
+    color: #0f0f0f;
+    font-weight: normal;
+}
+
+button {
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 32px 8px 32px;
+    border-radius: 50px;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    position: relative;
+    min-width: 375px;
+}
+
+.__titulo {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.__subtitulo {
+    margin-bottom: 40px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.__texto {
+    margin-bottom: 32px;
+}
+
+.__botonSecundario {
+    background-color: #EFEFEF;
+    color: #0062CB;
+    border: 2px solid #0062CB;
+}
+
+.__botonSecundario:hover {
+    background-color: #0062CB;
+    color: #EFEFEF;
+    border: 2px solid #0062CB;
+    cursor: pointer;
+}
+
+
+/* ////////////////////////////////////////// HEADER /// */
+.headerContenedor {
+    position: fixed;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.219);
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 1;
+    height: 75px; /* ALTURA DE .headerContenedor__logo */
+}
+
+.headerContenedor__menuPequeno {
+    background-color: #0062CB;
+    padding-top: 16px;
+    padding-bottom: 84px; /* la altura de .headerContenedor__logo */
+}
+
+.headerContenedor__menuPequeno__enlace:link, .headerContenedor__menuPequeno__enlace:visited {
+    color: #EFEFEF;
+}
+
+.headerContenedor__menuPequeno__enlace:hover, .headerContenedor__menuPequeno__enlace:active {
+    color: #EFEFEF;
+    text-decoration: underline;
+    text-decoration-color: #EFEFEF;
+}
+
+.menuPequeno__li {
+    font-size: 25px;
+    padding: 8px 10%;
+}
+
+
+/* ////////////// HEADER LOGO /// */ 
+.headerContenedor__logo {
+    background-color: #0062CB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.headerContenedor__logo__imagotipo {
+    display: none;
+}
+
+.headerContenedor__logo__logotipo {
+    display: initial;
+}
+
+.header__dentalBraquetsLogo__svg {
+    height: 30px;
+    width: auto;
+}
+
+.header__dentalBraquetsLogo__iconoMenu {
+    width: 35px;
+    height: 35px;
+    background-image: url(/images/icons/menu-white-48dp.svg);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.headerContenedor__logo__areaPersonal {
+    display: none;
+}
+
+.header__dentalBraquetsLogo__areaPersonal {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #0062CB;
+    border-radius: 25px;
+}
+
+.header__dentalBraquetsLogo__areaPersonal:hover {
+    border: 2px solid #EFEFEF;
+}
+
+
+/* ////////////// ESPACIO HEADER //// */
+.espacioHeader {
+    height: 75px;
+    background-color: #0062CB;
+    width: 100%;
+}
+
+
+/* //////////// MENU VERSIÓN GRANDE //// */
+.headerContenedor__menuGrande {
+    background-color: #0062CB;
+    width: 100%;
+    padding: 5px 20% 20px;
+    display: none;
+}
+
+.menuGrande__ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerContenedor__menuGrande__enlace:link, .headerContenedor__menuGrande__enlace:visited {
+    color: #EFEFEF;
+}
+
+.headerContenedor__menuGrande__enlace:hover, .headerContenedor__menuGrande__enlace:active {
+    color: #EFEFEF;
+    text-decoration: underline;
+    text-decoration-color: #EFEFEF;
+}
+
+.menuGrande__li {
+    font-size: 20px;
+}
+
+
+/* ////////////// MEDIA QUERY 768px /// */
+@media only screen and (min-width: 768px) {
+
+    .__titulo {
+        text-align: center;
+    }
+
+    .__subtitulo {
+        text-align: center;
+    }
+
+
+    /* ///////////// HEADER /// */
+    .menuPequeno__li {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .headerContenedor__logo {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .headerContenedor__logo__imagotipo {
+        display: initial;
+    }
+    
+    .headerContenedor__logo__logotipo {
+        display: none;
+    }
+}
+
+
+/* /////////// MEDIA QUERY 1600px /// */
+@media only screen and (min-width: 1600px) {
+
+
+    /* /////// HEADER /// */
+    .headerContenedor {
+        box-shadow: none;
+        height: 114px;
+    }
+
+
+    /* ///////MENU VERSIÓN PEQUEÑA /// */
+    .headerContenedor__menuPequeno {
+        display: none;
+    }
+
+
+    /* ////// MENU LOGO /// */
+    .headerContenedor__logo {
+        height: 114px;
+    }
+
+    .header__dentalBraquetsLogo__enlace {
+        display: block;
+    }
+
+    .header__dentalBraquetsLogo__svg {
+        height: 45px;
+    }
+
+    .headerContenedor__logo__areaPersonal {
+        display: initial;
+    }
+
+    .header__dentalBraquetsLogo__iconoMenu {
+        display: none;
+    }
+
+
+    /* /////// ESPACIO HEADER /// */
+    .espacioHeader {
+        height: calc(calc(114px + 54px) - 1px);  /* la altura de .headerContenedor__logo y .headerContenedor__menuGrande */
+        background-color: #0062CB;
+    }
+
+
+    /* //// MENU VERSIÓN GRANDE /// */
+    .headerContenedor__menuGrande {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.219);
+        position: fixed;
+        top: 113px; /* la altura de .headerContenedor__logo - 1px */
+        z-index: 1;
+        display: block;
+    }
+}
+/* ////////////////////////////////////////// FINAL DE HEADER // */
+
+
+/* /////////////////////////////////// TUS DATOS // */
+
+/* ////////////////////////////////// EDITAR PERFIL // */
+.editarPerfil {
+    padding: 94px 10% 94px;
+}
+
+.editarPerfil__textos {
+    margin-bottom: 32px;
+}
+
+.editarPerfil__bloque {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.editarPerfil__tipoDatos {
+    margin: 24px 0 24px;
+}
+
+.editarPerfil__tipoDatos:first-of-type {
+    margin-top: 0;
+}
+
+.editarPerfil__apartado {
+    width: 100%;
+}
+
+.editarPerfil__apartado:last-of-type {
+    margin-bottom: 40px;
+}
+
+.editarPerfil__apartado__nombre {
+    margin-bottom: 8px;
+}
+
+/* /// INPUT // */
+
+/* (Para ocultar las flechitas en los input number) */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formularioInfo__input {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 16px 24px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+/* /// CHECKBOX // */
+.contenedorAceptoPolitica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    flex-basis: 100%;
+}
+
+input[type="checkbox"] {
+    margin: 0px;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #0f0f0f;
+}
+
+/* ////// BOTÓN DE MENTIRA PERO QUE FUNCIOINA ///////// */
+.__botonSecundario__margenSuperior {
+    margin: 0 auto;
+}
+
+.__botonSecundario__enlace:link, .__botonSecundario__enlace:visited {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 32px 8px 32px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+    color: #0062CB;
+    border: 2px solid #0062CB;
+}
+
+.__botonSecundario__enlace:hover, .__botonSecundario__enlace:active {
+    background-color: #0062CB;
+    color: #EFEFEF;
+    border: 2px solid #0062CB;
+}
+
+.registro {
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+/* //////////// MEDIA QUERY 768px ///// */
+@media only screen and (min-width: 768px) {
+
+    .editarPerfil { 
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .registro {
+        text-align: center;
+    }
+}
+
+
+/* //////// MEDIA QUERY 1600px ///////// */
+@media only screen and (min-width: 1600px) {
+
+    .editarPerfil { 
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+/* //////////////////////////// FINAL DE EDITAR PERFIL // */
+
+
+/* ////////////////////////////////////////// FOOTER /// */
+.contenedorFooter {
+    padding: 48px 10% 48px;
+    background-color: #0062CB;
+}
+
+.footer__redesSociales {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+
+.footer__redesSociales__icon {
+    width: 45px;
+    height: auto;
+    cursor: pointer;
+}
+
+.footer__DentalBraquetsLogo {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #EFEFEF;
+    margin-bottom: 16px;
+}
+
+.footer__direccion1 {
+    color: #EFEFEF;
+}
+
+.footer__direccion2 {
+    color: #EFEFEF;
+    margin-bottom: 16px;
+}
+
+.footer__email {
+    color: #EFEFEF;
+    margin-bottom: 32px;
+}
+
+.footer__privacidad {
+    color: #EFEFEF;
+    text-align: right;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.footer__privacidad:hover {
+    color: #0f0f0f;
+}
+
+.footer__cookies {
+    color: #EFEFEF;
+    text-decoration-line: underline;
+    text-align: right;
+    cursor: pointer;
+}
+
+.footer__cookies:hover {
+    color: #0f0f0f;
+}
+
+
+/* ////////////// MEDIA QUERY 768px /// */
+@media only screen and (min-width: 768px) {
+
+    .contenedorFooter {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+
+/* /////////////// MEDIA QUERY 1600px /// */
+@media only screen and (min-width: 1600px) {
+
+    .footer__redesSociales {
+        padding-left: 30%;
+        padding-right: 30%; 
+    }
+
+    .footer__redesSociales__icon {
+        cursor: pointer;
+    }
+}
