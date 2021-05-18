@@ -1,0 +1,390 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1D1D1D;
+    color: #FAFAFA;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    scroll-snap-type: y mandatory;
+    /* font-size: 62.5%;  10 px  */
+    scroll-behavior: smooth;
+}
+
+div.contenedor {
+    width: 75%;
+    min-width: 227px;
+    max-width: 315px;
+    margin: 0 auto;
+}
+
+main {
+    scroll-snap-type: y mandatory;
+}
+
+div.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.contenido:not(:first-of-type) {
+    height: calc(100vh - 100px);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+div.contenido:first-of-type {
+    height: calc(55vh - 50px);
+}
+
+div.contenido:last-of-type{
+    height: 100px;
+}
+
+
+div.contenedor_imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: calc(45vh - 50px);
+}
+
+div.contenedor_imagen img {
+    width: 80%;
+    max-width: 252px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 10vh;
+}
+
+h1 {
+    /* font-size: 3.7rem; */
+    font-size: 30px;
+}
+
+h2 {
+    margin: 0 0 3vh;
+    /* font-size: 2rem; */
+    font-size: 35px;
+}
+
+main p, main a {
+    /* font-size: 2rem; */
+    font-size: 20px;
+    margin: 0 0 3vh;
+}
+
+main p:last-of-type {
+    margin: 0;
+}
+
+div.social {
+    display: flex;
+    justify-items: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+    margin-top: 4vh;
+}
+
+div.social a {
+    flex-basis: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div.social a.website {
+   flex-basis: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1.quien_soy span, /* h1.quien_soy, */ footer h3.quien_soy {
+    color: #1FB58F;
+}
+
+h2.que_hago, div#que_hago p span, footer h3.que_hago {
+    color: #FEDC3D;
+}
+
+h2.como_lo_hago, div#como_lo_hago p span, footer h3.como_lo_hago {
+    color: #FE6587;
+}
+
+h2.contacto, div#contacto p span, footer h3.contacto, div.social {
+    color: #D48CF8;
+}
+
+/* //// START OF FOOTER ///////*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #1D1D1D;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-between;
+    flex-direction: column;
+    padding: 0 6.25%;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100px;
+    /* opacity: 0; */
+}
+
+footer h3 {
+    /* font-size: 1.6rem; */ 
+    font-size: 16px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+footer h3.left {
+    text-align: left;
+}
+
+footer h3.right {
+    text-align: right;
+}
+
+footer span {
+    display: block;
+    height: 2.5px;
+    transition: 0.2s;
+}
+
+footer h3:hover span {
+    height: 15px;
+    transition: 0.2s;
+}
+
+footer span.quien_soy {
+    background-color: #1FB58F;
+}
+
+footer span.que_hago {
+    background-color: #FEDC3D;
+}
+
+footer span.como_lo_hago {
+    background-color: #FE6587
+}
+
+footer span.contacto {
+    background-color: #D48CF8;
+}
+
+
+/* ////////////////////////////////////
+//////////// min-with: 620px //////////
+/////////////////////////////////////*/
+
+@media screen and (min-width: 620px) {
+
+    div.contenedor{
+        width: 77%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    div.contenido:not(:first-of-type) {
+        height: calc(100vh - 75px);
+    }
+
+    div.contenido:first-of-type {
+        height: calc(55vh - 37.5px);
+    }
+
+    div.contenido:last-of-type {
+        height: 75px;
+    }
+
+    div.contenedor_imagen {
+        height: calc(45vh - 37.5px);
+    }
+
+    main {
+        max-width: 885px;
+    }
+
+    h1 {
+        /* font-size: 7rem; */
+        font-size: 45px;
+    }
+
+    main p, main a {
+        /* font-size: 3.8rem; */
+        font-size: 25px;
+    }
+
+    main h2 {
+        /* font-size: 6rem; */
+        font-size: 60px;
+        font-weight: 500;
+    }
+
+    div.social {
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    div.social a {
+        flex-basis: 25%;  
+    }
+
+    /* //// START OF FOOTER ///////*/
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15%;
+        flex-wrap: nowrap;
+        height: 75px;
+    }
+
+    footer span {
+        display: block;
+        height: 2.5px;
+        transition: 0.5s;
+    }
+}
+
+
+
+
+/* ////////////////////////////////////
+//////////// min-with: 1100px //////////
+/////////////////////////////////////*/
+
+
+@media screen and (min-width: 1100px) {
+
+    div.contenedor{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    main {
+        flex-basis: 45%; 
+        text-align: left; 
+        /* position: relative; */
+        min-width: 661px;
+    }
+    
+    div.contenido {
+        height: calc(100vh - 73px);
+        align-items: left;
+    }
+
+    div.contenido:first-of-type {
+        height: calc(100vh - 73px);
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    main p, main a {
+        font-size: 28px;
+    }
+
+    div.contenedor_imagen {
+        height: calc(100vh - 73px);
+        flex-basis: 45%;
+        border-top: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.contenedor_imagen img {
+        position: fixed;
+        margin-top: 0;
+        width: 20%;
+        max-width: unset;
+    }
+
+    div.social {
+        justify-content: space-between;
+    }
+
+    div.social a {
+        font-size: 25px;
+        flex-basis: unset;
+    }
+
+    div.social a.website {
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    div.social .website {
+        width: auto;
+    }
+
+    /* //// START OF FOOTER ///////*/
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+}
+
+/* ////////////////////////////////////
+//////////// min-with: 1350px //////////
+/////////////////////////////////////*/
+
+
+@media screen and (min-width: 1350px) {
+
+    div.contenedor_imagen img {
+        width: 490px;
+    }
+
+}
+
+
+
+
+/* ////////////////////////////////////
+//////////// max-height: 590px //////////
+///////////////////////////////////// */
+
+@media screen and (max-height: 590px) {
+
+    html, body {
+        scroll-snap-type: inherit;
+    }
+
+    div.contenido:not(:first-of-type) {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    div.contenido:first-of-type {
+        height: auto;
+    }
+
+}
